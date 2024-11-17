@@ -50,7 +50,7 @@ const CodePage = () => {
             form.reset();
 
         } catch (error: any) {
-            throw new Error("bug");
+            throw new Error(error);
         } finally {
             router.refresh();
         }
