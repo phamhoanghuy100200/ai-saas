@@ -50,7 +50,7 @@ const ConversationPage = () => {
             form.reset();
 
         } catch (error: any) {
-            console.log(error);
+            throw new Error("bug");
         } finally {
             router.refresh();
         }
@@ -115,7 +115,7 @@ const ConversationPage = () => {
                                     {message.role === "assistant" ? <BotAvatar /> : <UserAvatar />}
                                     <ReactMarkdown
                                         components={{
-                                            pre: ({ node, ...props }) => (
+                                            pre: ({ ...props }) => (
                                                 <div className=" overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
                                                     <pre {...props} />
                                                 </div>

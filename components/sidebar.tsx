@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Montserrat } from "next/font/google";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils"
-import { CodeIcon, ImageIcon, LayoutDashboard, MessageSquare, MusicIcon, VideoIcon } from "lucide-react";
+import { CodeIcon, LayoutDashboard, MessageSquare } from "lucide-react";
 const montserrat = Montserrat({
     weight: "600",
     subsets: ["latin"]
